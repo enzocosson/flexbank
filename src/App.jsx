@@ -1,13 +1,17 @@
 import React from 'react';
-import Header from './Header/Header';
+import { Canvas } from '@react-three/fiber';
+import Header from './Components/Header/Header';
+import Cube from './Models/Cube/Cube';
 
 function App() {
   return (
     <div>
       <Header />
-      <main>
-
-      </main>
+      <Canvas>
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
+      <Cube />
+    </Canvas>
     </div>
   );
 }
