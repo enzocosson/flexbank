@@ -1,25 +1,42 @@
 import { useLocation, Link } from "react-router-dom";
-import "./Header.scss";
+import classNames from "classnames";
+import styles from "./Header.module.scss";
 
 function Header() {
   const location = useLocation();
 
+  const homeClass = classNames({
+    [styles.active]: location.pathname === "/",
+  });
+
+  const partnersClass = classNames({
+    [styles.active]: location.pathname === "/partners",
+  });
+
+  const contactClass = classNames({
+    [styles.active]: location.pathname === "/contact",
+  });
+
   return (
-    <header>
+    <header className={styles.header}>
       <h1>FlexBank</h1>
       <nav>
         <ul>
-          <li className={location.pathname === "/" ? "active" : ""}>
-            <Link to="/">home</Link>
+          <li>
+            <Link to="/" className={homeClass}>Home</Link>
           </li>
-          <li className={location.pathname === "/partners" ? "active" : ""}>
-            <Link to="/partners">partners</Link>
+          <li>
+            <Link to="/partners" className={partnersClass}>Partners</Link>
           </li>
-          <li className={location.pathname === "/contact" ? "active" : ""}>
-            <Link to="/contact">contact</Link>
+          <li>
+            <Link to="/contact" className={contactClass}>Contact</Link>
           </li>
         </ul>
       </nav>
+      <div className={styles.log}>
+        <Link to="/login" className={styles.login}>Login</Link>
+        <Link to="/signup" className={styles.signup}>Signup</Link>
+      </div>
     </header>
   );
 }

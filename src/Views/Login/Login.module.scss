@@ -1,0 +1,48 @@
+.main {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+
+  .background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 00%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -1;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 2rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 2rem;
+  }
+}
+
+.webgl {
+  position: fixed !important;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./Partners.module.scss";
 
 function Partners() {
   console.log("Partners");
