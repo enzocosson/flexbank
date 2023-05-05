@@ -1,18 +1,21 @@
-import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import Header from './Components/Header/Header';
-import Cube from './Models/Cube/Cube';
+import React from "react";
+import Header from "./Components/Header/Header";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Views/Home/Home";
+import Partners from "./Views/Partners/Partners";
+import Contact from "./Views/Contact/Contact";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Canvas>
-      <ambientLight />
-      <pointLight position={[10, 10, 10]} />
-      <Cube />
-    </Canvas>
-    </div>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/partners" component={Partners} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </Router>
   );
 }
 

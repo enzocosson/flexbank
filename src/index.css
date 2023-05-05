@@ -1,13 +1,48 @@
+@font-face {
+  font-family: 'BasierCircle';
+  src: url('../public/font/BasierCircle-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BasierCircle';
+  src: url('../public/font/BasierCircle-SemiBold.ttf') format('truetype');
+  font-weight: 500; 
+}
+
+@font-face {
+  font-family: 'BasierCircle';
+  src: url('../public/font/BasierCircle-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'BasierCircle';
+  src: url('../public/font/BasierCircle-Medium.ttf') format('truetype');
+  font-weight: 600;
+}
+
+:root{
+  --white: #F3F3F3;
+  --black: #1D1D1D;
+  --blue : #1AA7EF;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
+  position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
