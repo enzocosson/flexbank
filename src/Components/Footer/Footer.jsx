@@ -1,12 +1,9 @@
 import styles from "./Footer.module.scss";
 
 function Footer() {
-
-
   return (
     <footer>
       <div className={styles.container__footer}>
-
         <h5>FlexBank</h5>
         <div className={styles.link}>
           <div className={styles.contact}>
@@ -27,9 +24,10 @@ function Footer() {
             <p>Facebook</p>
             <p>Twitter</p>
           </div>
+
+          <img className={styles.back__card} src="images/back.png" alt="" />
         </div>
       </div>
-
     </footer>
   );
 }

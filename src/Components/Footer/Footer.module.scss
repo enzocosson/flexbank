@@ -27,7 +27,7 @@ footer {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-end;
 
       .contact {
         row-gap: 0.5rem;
@@ -67,6 +67,10 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+      }
+
+      .back__card {
+        width: 250px;
       }
     }
   }

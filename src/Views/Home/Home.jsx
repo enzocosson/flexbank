@@ -1,4 +1,5 @@
 import React from "react";
+import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Link } from "react-router-dom";
 import SceneCard from "../../Models/SceneCard/SceneCard";
@@ -7,21 +8,18 @@ import styles from "./Home.module.scss";
 function Home() {
   return (
     <div className={styles.main}>
-      <Canvas className={styles.webgl}>
-        <ambientLight intensity={0.2} />
+      <Canvas
+        className={styles.webgl}
+        camera={{
+          fov: 64,
+          position: [0, 0, 20],
+        }}
+      >
+        <ambientLight intensity={1} />
         <directionalLight color="purple" position={[0, 0, 15]} intensity={1} />
-        <pointLight position={[10, 10, 10]} />
-        <perspectiveCamera
-          position={[0, 0, 100]}
-          fov={75}
-          near={0.1}
-          far={10000}
-        />
-        <SceneCard
-          scale={[2, 2, 2]}
-          position={[-15, -15, -20]}
-          rotation={[0, 0, -0.3]}
-        />
+        <OrbitControls enableZoom={false} />
+
+        <SceneCard position={[-12, -11, 0]} rotation={[-1, 1, 0.5]} />
       </Canvas>
       <div className={styles.couverture}>
         <img
@@ -81,12 +79,23 @@ function Home() {
       <div className={styles.security}>
         <h3>Your security is our top priority</h3>
 
-        <p>We use the latest technology to keep your money and personal information safe</p>
-        <p>At FlexBank, we take your security seriously. We use advanced security measures to protect your money and personal information from unauthorized access</p>
+        <p>
+          We use the latest technology to keep your money and personal
+          information safe
+        </p>
+        <p>
+          At FlexBank, we take your security seriously. We use advanced security
+          measures to protect your money and personal information from
+          unauthorized access
+        </p>
 
         <div className={styles.security__container}>
           <img className={styles.cadena} src="./images/cadenas.png" alt="" />
-          <h5>At FlexBank, we take your security seriously. We use advanced security measures to protect your money and personal information from unauthorized access.</h5>
+          <h5>
+            At FlexBank, we take your security seriously. We use advanced
+            security measures to protect your money and personal information
+            from unauthorized access.
+          </h5>
           <Link to="/">See more</Link>
         </div>
       </div>
@@ -94,22 +103,21 @@ function Home() {
       <div className={styles.partners}>
         <h3>All our partners</h3>
         <div className={styles.container__partners}>
-
-         <div className={styles.item}>
+          <div className={styles.item}>
             <img src="./images/cic.png" alt="" />
-         </div>
+          </div>
 
-         <div className={styles.item}>
+          <div className={styles.item}>
             <img src="./images/ca.svg.png" alt="" />
-         </div>
+          </div>
 
-         <div className={styles.item}>
+          <div className={styles.item}>
             <img src="./images/sg.png" alt="" />
-         </div>
+          </div>
 
-         <div className={styles.item}>
+          <div className={styles.item}>
             <img src="./images/bnp.png" alt="" />
-         </div>
+          </div>
         </div>
       </div>
     </div>

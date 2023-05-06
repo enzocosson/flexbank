@@ -1,12 +1,13 @@
 import React from "react";
-import "./Partners.module.scss";
+import styles from "./Partners.module.scss";
 
 function Partners() {
   console.log("Partners");
   return (
-    <div className="main">
-      <h2>Partners</h2>
-      <p>Bienvenue sur la page d'accueil de mon application React.</p>
+    <div className={styles.main}>
+      <img className={styles.background} src="./images/background.jpg" alt="" />
+      <h1>Partners</h1>
+      <h2>Easy, secure, and convenient banking solutions for all your needs</h2>
     </div>
   );
 }
