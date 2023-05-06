@@ -27,7 +27,9 @@ function Home() {
           src="./images/background.jpg"
           alt=""
         />
-        <h1>Welcome to FlexBank, your financial partner for life</h1>
+        <h1>
+          Welcome to <span>FlexBank</span>, your financial partner for life
+        </h1>
         <h2>
           Easy, secure, and convenient banking solutions for all your needs
         </h2>

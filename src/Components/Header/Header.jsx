@@ -35,7 +35,9 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <h1>FlexBank</h1>
+      <Link to="/" className={`${styles.logo}`} onClick={() => handleClick()}>
+        FlexBank
+      </Link>
       <div className={navbarclass}>
         <nav>
           <ul>

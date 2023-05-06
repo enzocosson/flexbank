@@ -40,6 +40,15 @@
       color: var(--black);
       margin-bottom: 2rem;
       z-index: 1;
+
+      span {
+        background-color: var(--white);
+        padding: 1rem;
+        margin-right: 1rem;
+        border-radius: 15px;
+        display: inline-block;
+        transform: rotate(-5deg);
+      }
     }
     h2 {
       text-align: center;
