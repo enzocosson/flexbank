@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.77138912.css",
+    "main.js": "/static/js/main.fdd156d2.js",
+    "static/media/BasierCircle-Medium.ttf": "/static/media/BasierCircle-Medium.f63bac6dc659234a71dd.ttf",
+    "static/media/BasierCircle-SemiBold.ttf": "/static/media/BasierCircle-SemiBold.4462c76b10bb73f25778.ttf",
+    "static/media/BasierCircle-Bold.ttf": "/static/media/BasierCircle-Bold.f0835b76763260c45740.ttf",
+    "static/media/BasierCircle-Regular.ttf": "/static/media/BasierCircle-Regular.4fdbe08412a7f9b2d9a8.ttf",
+    "index.html": "/index.html",
+    "main.77138912.css.map": "/static/css/main.77138912.css.map",
+    "main.fdd156d2.js.map": "/static/js/main.fdd156d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77138912.css",
+    "static/js/main.fdd156d2.js"
+  ]
+}

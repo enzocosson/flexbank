@@ -35,14 +35,22 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <Link to="/" className={`${styles.logo}`} onClick={() => handleClick()}>
+      <Link
+        to="/home"
+        className={`${styles.logo}`}
+        onClick={() => handleClick()}
+      >
         FlexBank
       </Link>
       <div className={navbarclass}>
         <nav>
           <ul>
             <li>
-              <Link to="/" className={homeClass} onClick={() => handleClick()}>
+              <Link
+                to="/home"
+                className={homeClass}
+                onClick={() => handleClick()}
+              >
                 Home
               </Link>
             </li>
@@ -83,10 +91,13 @@ function Header() {
           </Link>
         </div>
       </div>
-      <button class={burgerclass} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <div class={styles.line}></div>
-        <div class={styles.line}></div>
-        <div class={styles.line}></div>
+      <button
+        className={burgerclass}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
       </button>
     </header>
   );
