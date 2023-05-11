@@ -1,6 +1,6 @@
 # Website
 
-Visit it : https://flexbank.vercel.app/
+Visit : https://flexbank.vercel.app/
 
 # Launch the project
 
