@@ -24,14 +24,14 @@ function Home() {
       <div className={styles.couverture}>
         <img
           className={styles.background}
-          src="./images/background.jpg"
+          src={process.env.PUBLIC_URL + "/images/background.jpg"}
           alt=""
         />
         <h1>
           Welcome to <span>FlexBank</span>, your financial partner for life
         </h1>
         <h2>
-          Easy, secure, and convenient banking solutions for all your needs
+          Easy, secure, and convenient banking solutions for all your needsss
         </h2>
         <Link to="/" className={styles.learn__more}>
           Learn More
@@ -43,7 +43,7 @@ function Home() {
 
         <div className={styles.features}>
           <div className={styles.access}>
-            <img src="./images/earth.png" alt="" />
+            <img src={process.env.PUBLIC_URL + "./images/earth.png"} alt="" />
             <div className={styles.text}>
               <h4>Seamless Mobile Banking</h4>
               <p>
@@ -62,7 +62,11 @@ function Home() {
                 including mobile check deposit and online transfers.
               </p>
               <Link to="/">See more</Link>
-              <img className={styles.money} src="./images/money.png" alt="" />
+              <img
+                className={styles.money}
+                src={process.env.PUBLIC_URL + "./images/money.png"}
+                alt=""
+              />
             </div>
 
             <div className={styles.advice}>
@@ -92,7 +96,11 @@ function Home() {
         </p>
 
         <div className={styles.security__container}>
-          <img className={styles.cadena} src="./images/cadenas.png" alt="" />
+          <img
+            className={styles.cadena}
+            src={process.env.PUBLIC_URL + "./images/cadenas.png"}
+            alt=""
+          />
           <h5>
             At FlexBank, we take your security seriously. We use advanced
             security measures to protect your money and personal information
@@ -106,19 +114,19 @@ function Home() {
         <h3>All our partners</h3>
         <div className={styles.container__partners}>
           <div className={styles.item}>
-            <img src="./images/cic.png" alt="" />
+            <img src={process.env.PUBLIC_URL + "./images/cic.png"} alt="" />
           </div>
 
           <div className={styles.item}>
-            <img src="./images/ca.svg.png" alt="" />
+            <img src={process.env.PUBLIC_URL + "./images/ca.svg.png"} alt="" />
           </div>
 
           <div className={styles.item}>
-            <img src="./images/sg.png" alt="" />
+            <img src={process.env.PUBLIC_URL + "./images/sg.png"} alt="" />
           </div>
 
           <div className={styles.item}>
-            <img src="./images/bnp.png" alt="" />
+            <img src={process.env.PUBLIC_URL + "./images/bnp.png"} alt="" />
           </div>
         </div>
       </div>

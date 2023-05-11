@@ -35,28 +35,20 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <Link
-        to="/home"
-        className={`${styles.logo}`}
-        onClick={() => handleClick()}
-      >
+      <Link to="/" className={`${styles.logo}`} onClick={() => handleClick()}>
         FlexBank
       </Link>
       <div className={navbarclass}>
         <nav>
           <ul>
             <li>
-              <Link
-                to="/home"
-                className={homeClass}
-                onClick={() => handleClick()}
-              >
+              <Link to="/" className={homeClass} onClick={() => handleClick()}>
                 Home
               </Link>
             </li>
             <li>
               <Link
-                to="/partners"
+                to="partners"
                 className={partnersClass}
                 onClick={() => handleClick()}
               >
@@ -65,7 +57,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/contact"
+                to="contact"
                 className={contactClass}
                 onClick={() => handleClick()}
               >
@@ -76,14 +68,14 @@ function Header() {
         </nav>
         <div className={styles.log}>
           <Link
-            to="/login"
+            to="login"
             className={styles.login}
             onClick={() => handleClick()}
           >
             Login
           </Link>
           <Link
-            to="/signup"
+            to="signup"
             className={styles.signup}
             onClick={() => handleClick()}
           >

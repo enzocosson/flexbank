@@ -12,9 +12,9 @@ import "./App.module.scss";
 function App() {
   return (
     <Router>
-      <Header />
+      <Header basename="/flexbank" />
       <Switch>
-        <Route path="/home" exact component={Home} />
+        <Route path="/" exact component={Home} />
         <Route path="/partners" component={Partners} />
         <Route path="/contact" component={Contact} />
         <Route path="/login" component={Login} />
